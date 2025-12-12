@@ -3,7 +3,7 @@
 [![PAPER](https://img.shields.io/badge/ICASSP_2025-paper-green)](https://ieeexplore.ieee.org/abstract/document/10890145)
 [![WEBPAGE](https://img.shields.io/badge/Demo-webpage-blue)](https://choishio.github.io/demo_M2M-TSE/)
 
-This repository provides some codes for the __multichannel-to-multichannel target sound extraction (M2M-TSE) using direction and timestamp clues__, presented at ICASSP 2025.
+This repository provides the codes for the __multichannel-to-multichannel target sound extraction (M2M-TSE) using direction and timestamp clues__, presented at ICASSP 2025.
 
 *We propose a multichannel-to-multichannel target sound extraction (M2M-TSE) framework for separating multichannel target signals from a multichannel mixture of sound sources. Target sound extraction (TSE) isolates a specific target signal using user-provided clues, typically focusing on single-channel extraction with class labels or temporal activation maps. However, to preserve and utilize spatial information in multichannel audio signals, it is essential to extract multichannel signals of a target sound source. Moreover, the clue for extraction can also include spatial or temporal cues like direction-of-arrival (DoA) or timestamps of source activation. To address these challenges, we present an M2M framework that extracts a multichannel sound signal based on spatio-temporal clues. We demonstrate that our transformer-based architecture can successively accomplish the M2M-TSE task for multichannel signals synthesized from audio signals of diverse classes in different room environments. Furthermore, we show that the multichannel extraction task introduces sufficient inductive bias in the DNN, allowing it to directly handle DoA clues without utilizing hand-crafted spatial features.*
 
@@ -19,13 +19,17 @@ Model architecture for M2M-TSE based on direction and timestamp clues.
 
 ## Training & Evaluation
 
+Go to the `M2M-TSE` directory:
+
+    cd M2M-TSE
+
 ### Training
 
-    python3 -W ignore -m src.training.train experiments/{experiment directory with config.json} --use_cuda --gpu_ids {List of GPU ids used for training, e.g., 0 1 2 3}
+    python3 -W ignore -m src.training.train experiments/{experiment directory with config.json} --use_cuda --gpu_ids {list of GPU ids used for training, e.g., 0 1 2 3}
 
 ### Evaluation
 
-    python3 -W ignore -m src.training.eval experiments/{experiment directory with config.json} --use_cuda --gpu_ids {List of GPU ids used for evaluation, e.g., 0 1 2 3}
+    python3 -W ignore -m src.training.eval experiments/{experiment directory with config.json} --use_cuda --gpu_ids {list of GPU ids used for evaluation, e.g., 0 1 2 3}
 
 ## Note
 
