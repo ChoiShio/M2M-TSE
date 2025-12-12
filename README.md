@@ -38,7 +38,7 @@ Some components of this repository are based on and modified from:
 - Overall framework of training & evaluation: [Waveformer](https://github.com/vb000/Waveformer)
 - Model architecture: [DeFTAN-II](https://github.com/donghoney0416/DeFTAN-II)
 
-Since [Scaper](https://github.com/justinsalamon/scaper) library is licensed under the BSD-3-Clause License, please make sure to include the original license text in your distribution. For details, see the `THIRD_PARTY_LICENSES` file. For other repositories, you can see the `LICENSE` file.
+Since [Scaper](https://github.com/justinsalamon/scaper) library is licensed under the BSD-3-Clause License, please make sure to include the original license text in your distribution. For details, see the `THIRD_PARTY_LICENSES` file. For this repository and others, you can see the `LICENSE` file.
 
 ## Citation
 
