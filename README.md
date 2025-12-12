@@ -15,7 +15,54 @@ Model architecture for M2M-TSE based on direction and timestamp clues.
 
 ## Dataset
 
-(To be added)
+1. Follow the dataset preparation steps described at [Waveformer](https://github.com/vb000/Waveformer). Once the required files are generated, place them in `dataset/FSD2018_TAU2019`.
+
+2. Download the [REVERB challenge](https://ieeexplore.ieee.org/document/6701894) dataset. Then save the 4-channel noise data obtained by selecting channels 0, 2, 4, and 6 from the original 8-channel recordings into `dataset/REVERB_4ch`. You may refer to `change_REVERB_channel.py` for details.
+
+3. Go to the `dataset` directory:
+
+        cd dataset
+
+4. Generate the 4-channel reverberant RIRs and update the JAMS files accordingly (e.g., RIR directory paths and source directions). Option 0 generates the dataset without noise, while Option 1 adds REVERB noise. If you fail to download the REVERB challenge dataset, you can proceed only with Option 0. __Option 1 must be run after completing Option 0.__
+        
+        python spatialize_data.py --option 0
+        python spatialize_data.py --option 1
+
+After the above steps, your `dataset` directory should be structured as follows:
+
+    dataset/
+    ├── FSD2018_TAU2019/
+    │   ├── FSDKaggle2018/
+    │   ├── FSDSoundScapes/
+    │   ├── download.py
+    │   └── fsd_scaper_source_gen.py
+    ├── REVERB/
+    ├── REVERB_4ch/
+    ├── FSDSoundScapes_MC_same_height_8k/
+    |   ├── background/zero.wav
+    │   ├── FSDKaggle2018/
+    │   └── jams/
+    ├── FSDSoundScapes_MC_same_height_8k_noise/
+    │   ├── FSDKaggle2018/
+    │   └── jams/
+    ├── jams_RIRs_same_height_8k/
+    ├── change_REVERB_channel.py
+    ├── pyroom.cfg
+    ├── spatialize_data.py
+    └── utils.py
+
+The figures below illustrate the room configuration example: the left figure shows the original view, while the right figure presents the top view. The details of this example are in `assets/RIR_test_00000000_reverb.txt`.
+
+<div style="display: flex; justify-content: center;">
+  <div style="text-align: center; margin-right: 20px;">
+    <img src="assets/RIR_test_00000000_reverb.png" width="300" />
+    <p>Original view</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="assets/RIR_test_00000000_reverb(top).png" width="300" />
+    <p>Top view</p>
+  </div>
+</div>
 
 ## Training & Evaluation
 
