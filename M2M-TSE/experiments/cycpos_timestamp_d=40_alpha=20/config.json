@@ -1,0 +1,80 @@
+{
+    "model": "src.training.network_DeFTAN2",
+    "model_params":
+    {
+        "n_srcs": 4,
+        "win": 256,
+        "n_mics": 4,
+        "n_layers": 6, 
+        "att_dim": 64, 
+        "hidden_dim": 256, 
+        "n_head": 4, 
+        "emb_dim": 64, 
+        "emb_ks": 4, 
+        "emb_hs": 1, 
+        "dropout": 0.1, 
+        "eps": 1.0e-5,
+        "clue_type": "time-azim",
+        "label_len": 41, 
+        "angle_dim": 40
+    },
+    "train_data":
+    {
+        "input_dir": "../dataset/FSDSoundScapes_MC_same_height_8k_noise",
+        "dset": "train",
+        "sr": 8000,
+        "win": 256,
+        "resample_rate": null,
+        "azim_type": "cycpos",
+        "d_model": 40, 
+        "alpha": 20,
+        "data_div_rate": 4,
+        "ts_only": 0
+    },
+    "val_data":
+    {
+        "input_dir": "../dataset/FSDSoundScapes_MC_same_height_8k_noise",
+        "dset": "val",
+        "sr": 8000,
+        "win": 256,
+        "resample_rate": null,
+        "azim_type": "cycpos",
+        "d_model": 40, 
+        "alpha": 20,
+        "data_div_rate": 4,
+        "ts_only": 0
+    },
+    "test_data":
+    {
+        "input_dir": "../dataset/FSDSoundScapes_MC_same_height_8k_noise",
+        "dset": "test",
+        "sr": 8000,
+        "win": 256,
+        "resample_rate": null,
+        "azim_type": "cycpos",
+        "d_model": 40, 
+        "alpha": 20,
+        "data_div_rate": 4,
+        "ts_only": 0
+    },
+    "optim":
+    {
+        "lr": 5e-4,
+        "weight_decay": 0.0
+    },
+    "lr_sched":
+    {
+        "mode": "max",
+        "factor": 0.1,
+        "patience": 5,
+        "min_lr": 5e-6,
+        "threshold": 0.1,
+        "threshold_mode": "abs"
+    },
+    "base_metric": "scale_invariant_signal_noise_ratio",
+    "fix_lr_epochs": 50,
+    "epochs": 100,
+    "batch_size": 4,
+    "eval_batch_size": 20,
+    "n_workers": 32
+}

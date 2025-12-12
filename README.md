@@ -13,27 +13,26 @@ Model architecture for M2M-TSE based on direction and timestamp clues.
 
 ![Model architecture](./assets/model.jpg)
 
-## Training and Evaluation
-
-### Dataset
+## Dataset
 
 (To be added)
+
+## Training & Evaluation
 
 ### Training
 
-(To be added)
+    python3 -W ignore -m src.training.train experiments/{experiment directory with config.json} --use_cuda --gpu_ids {List of GPU ids used for training, e.g., 0 1 2 3}
 
 ### Evaluation
 
-(To be added)
+    python3 -W ignore -m src.training.eval experiments/{experiment directory with config.json} --use_cuda --gpu_ids {List of GPU ids used for evaluation, e.g., 0 1 2 3}
 
 ## Note
 
 Some components of this repository are based on and modified from:
-- [Pyroomacoustics](https://github.com/LCAV/pyroomacoustics)
-- [Scaper](https://github.com/justinsalamon/scaper)
-- [Waveformer](https://github.com/vb000/Waveformer)
-- [DeFTAN-II](https://github.com/donghoney0416/DeFTAN-II)
+- Dataset & dataloader: [Pyroomacoustics](https://github.com/LCAV/pyroomacoustics) / [Scaper](https://github.com/justinsalamon/scaper) / [Pyloudnorm](https://github.com/csteinmetz1/pyloudnorm)
+- Overall framework of training & evaluation: [Waveformer](https://github.com/vb000/Waveformer)
+- Model architecture: [DeFTAN-II](https://github.com/donghoney0416/DeFTAN-II)
 
 ## Citation
 
