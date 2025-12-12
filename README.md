@@ -38,11 +38,13 @@ Some components of this repository are based on and modified from:
 - Overall framework of training & evaluation: [Waveformer](https://github.com/vb000/Waveformer)
 - Model architecture: [DeFTAN-II](https://github.com/donghoney0416/DeFTAN-II)
 
+Since [Scaper](https://github.com/justinsalamon/scaper) library is licensed under the BSD-3-Clause License, please make sure to include the original license text in your distribution. For details, see the `THIRD_PARTY_LICENSES` file. For other repositories, you can see the `LICENSE` file.
+
 ## Citation
 
     @inproceedings{choi2025multichannel,
         title={Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues},
-        author={Choi, D. and Choi, J. W.},
+        author={Choi, Dayun and Choi, Jung-Woo},
         booktitle={Proc. IEEE Int. Conf. Acoust., Speech, Signal Process. (ICASSP)},
         pages={1--5},
         year={2025},
