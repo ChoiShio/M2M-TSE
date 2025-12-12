@@ -39,7 +39,7 @@ After the above steps, your `dataset` directory should be structured as follows:
     ├── REVERB/
     ├── REVERB_4ch/
     ├── FSDSoundScapes_MC_same_height_8k/
-    |   ├── background/zero.wav
+    │   ├── background/zero.wav
     │   ├── FSDKaggle2018/
     │   └── jams/
     ├── FSDSoundScapes_MC_same_height_8k_noise/
@@ -51,7 +51,7 @@ After the above steps, your `dataset` directory should be structured as follows:
     ├── spatialize_data.py
     └── utils.py
 
-The figures below illustrate the room configuration example. The details of this example are in `assets/RIR_test_00000000_reverb.txt`.
+The figures below illustrate the room configuration example. (`M` denotes the 4-channel microphone array, and `S*` indicates each individual source.) The details of this example are in `assets/RIR_test_00000000_reverb.txt`.
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center; margin-right: 20px;">
@@ -85,7 +85,7 @@ Some components of this repository are based on and modified from:
 - Overall framework of training & evaluation: [Waveformer](https://github.com/vb000/Waveformer)
 - Model architecture: [DeFTAN-II](https://github.com/donghoney0416/DeFTAN-II)
 
-Since [Scaper](https://github.com/justinsalamon/scaper) library is licensed under the BSD-3-Clause License, please make sure to include the original license text in your distribution. For details, see the `THIRD_PARTY_LICENSES` file. For this repository and others, you can see the `LICENSE` file.
+Since the [Scaper](https://github.com/justinsalamon/scaper) library is licensed under the BSD-3-Clause License, please make sure to include the original license text in your distribution. For details, see the `THIRD_PARTY_LICENSES` file. For this repository and others, you can see the `LICENSE` file.
 
 ## Citation
 
