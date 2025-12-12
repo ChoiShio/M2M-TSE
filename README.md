@@ -1,4 +1,4 @@
-# M2M-TSE
+# M2M-TSE based on direction and timestamp clues
 
 [![PAPER](https://img.shields.io/badge/ICASSP_2025-paper-green)](https://ieeexplore.ieee.org/abstract/document/10890145)
 [![WEBPAGE](https://img.shields.io/badge/Demo-webpage-blue)](https://choishio.github.io/demo_M2M-TSE/)
@@ -17,7 +17,7 @@ Model architecture for M2M-TSE based on direction and timestamp clues.
 
 1. Follow the dataset preparation steps described at [Waveformer](https://github.com/vb000/Waveformer). Once the required files are generated, place them in `dataset/FSD2018_TAU2019`.
 
-2. Download the [REVERB challenge](https://ieeexplore.ieee.org/document/6701894) dataset. Then save the 4-channel noise data obtained by selecting channels 0, 2, 4, and 6 from the original 8-channel recordings into `dataset/REVERB_4ch`. You may refer to `change_REVERB_channel.py` for details.
+2. Download the [REVERB challenge](https://ieeexplore.ieee.org/document/6701894) dataset. Then save the 4-channel noise data obtained by selecting channels 0, 2, 4, and 6 from the original 8-channel recordings into `dataset/REVERB_4ch`. You may refer to `dataset/change_REVERB_channel.py` for details.
 
 3. Go to the `dataset` directory:
 
@@ -51,7 +51,7 @@ After the above steps, your `dataset` directory should be structured as follows:
     ├── spatialize_data.py
     └── utils.py
 
-The figures below illustrate the room configuration example: the left figure shows the original view, while the right figure presents the top view. The details of this example are in `assets/RIR_test_00000000_reverb.txt`.
+The figures below illustrate the room configuration example. The details of this example are in `assets/RIR_test_00000000_reverb.txt`.
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center; margin-right: 20px;">
