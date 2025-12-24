@@ -1,7 +1,10 @@
 # M2M-TSE based on direction and timestamp clues
 
 [![PAPER](https://img.shields.io/badge/ICASSP_2025-paper-green)](https://ieeexplore.ieee.org/abstract/document/10890145)
+[![PDF](https://img.shields.io/badge/ICASSP_2025-pdf-orange)](./assets/pdf/Multichannel-to-Multichannel_Target_Sound_Extraction_Using_Direction_and_Timestamp_Clues.pdf)
 [![WEBPAGE](https://img.shields.io/badge/Demo-webpage-blue)](https://choishio.github.io/demo_M2M-TSE/)
+
+### Dayun Choi, Jung-Woo Choi*
 
 This repository provides the codes for the __multichannel-to-multichannel target sound extraction (M2M-TSE) using direction and timestamp clues__, presented at ICASSP 2025.
 
@@ -92,9 +95,10 @@ Since the [Scaper](https://github.com/justinsalamon/scaper) library is licensed 
     @inproceedings{choi2025multichannel,
         title={Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues},
         author={Choi, Dayun and Choi, Jung-Woo},
-        booktitle={Proc. IEEE Int. Conf. Acoust., Speech, Signal Process. (ICASSP)},
+        booktitle={Proceedings of the 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
         pages={1--5},
         year={2025},
+        month={April},
         organization={IEEE},
         address="Hyderabad, India"
     }
