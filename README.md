@@ -6,7 +6,7 @@
 
 ### __Dayun Choi__ and __Jung-Woo Choi__*
 
-This repository provides the codes for the "__Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues__", presented at ICASSP 2025.
+This repository provides the codes for the "__Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues__," presented at ICASSP 2025.
 
 ## Abstract
 
