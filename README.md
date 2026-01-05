@@ -1,4 +1,4 @@
-# M2M-TSE based on direction and timestamp clues
+# M2M-TSE using direction and timestamp clues
 
 [![PAPER](https://img.shields.io/badge/ICASSP_2025-paper-green)](https://ieeexplore.ieee.org/abstract/document/10890145)
 [![PDF](https://img.shields.io/badge/ICASSP_2025-pdf-orange)](./assets/pdf/Multichannel-to-Multichannel_Target_Sound_Extraction_Using_Direction_and_Timestamp_Clues.pdf)
@@ -7,6 +7,8 @@
 ### Dayun Choi, Jung-Woo Choi*
 
 This repository provides the codes for the __multichannel-to-multichannel target sound extraction (M2M-TSE) using direction and timestamp clues__, presented at ICASSP 2025.
+
+## Abstract
 
 *We propose a multichannel-to-multichannel target sound extraction (M2M-TSE) framework for separating multichannel target signals from a multichannel mixture of sound sources. Target sound extraction (TSE) isolates a specific target signal using user-provided clues, typically focusing on single-channel extraction with class labels or temporal activation maps. However, to preserve and utilize spatial information in multichannel audio signals, it is essential to extract multichannel signals of a target sound source. Moreover, the clue for extraction can also include spatial or temporal cues like direction-of-arrival (DoA) or timestamps of source activation. To address these challenges, we present an M2M framework that extracts a multichannel sound signal based on spatio-temporal clues. We demonstrate that our transformer-based architecture can successively accomplish the M2M-TSE task for multichannel signals synthesized from audio signals of diverse classes in different room environments. Furthermore, we show that the multichannel extraction task introduces sufficient inductive bias in the DNN, allowing it to directly handle DoA clues without utilizing hand-crafted spatial features.*
 
@@ -59,7 +61,7 @@ The figures below illustrate the room configuration example. (`M` denotes the 4-
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center; margin-right: 20px;">
     <img src="assets/RIR_test_00000000_reverb.png" width="300" />
-    <p>Original view</p>
+    <p>3D view</p>
   </div>
   <div style="text-align: center;">
     <img src="assets/RIR_test_00000000_reverb(top).png" width="300" />
