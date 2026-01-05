@@ -4,7 +4,7 @@
 [![PDF](https://img.shields.io/badge/ICASSP_2025-pdf-orange)](./assets/pdf/Multichannel-to-Multichannel_Target_Sound_Extraction_Using_Direction_and_Timestamp_Clues.pdf)
 [![WEBPAGE](https://img.shields.io/badge/Demo-webpage-blue)](https://choishio.github.io/demo_M2M-TSE/)
 
-### Dayun Choi, Jung-Woo Choi*
+### __Dayun Choi__ and __Jung-Woo Choi__*
 
 This repository provides the codes for the __multichannel-to-multichannel target sound extraction (M2M-TSE) using direction and timestamp clues__, presented at ICASSP 2025.
 
